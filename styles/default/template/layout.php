@@ -148,8 +148,6 @@ if(!$IsAjax){
 		<!-- footer start -->
 		<div class="Copyright">
 			<p>
-			<?php echo $Config['SiteName']; ?> Powered By © 2006-2016 <a href="http://www.94cb.com" target="_blank">Carbon Forum</a> V<?php echo $Config['Version']; ?>
-			<a href="<?php echo $Config['WebsitePath']; ?>/statistics"><?php echo $Lang['Statistics']; ?></a>
 			<?php
 			if ($IsMobile && $Config['MobileDomainName']) {
 			?>
@@ -166,6 +164,7 @@ $TotalTime = number_format(($MicroTime[1] + $MicroTime[0] - $StartTime), 6) * 10
 			<?php echo $DB->querycount; ?> SQL Queries, 
 			<?php echo FormatBytes(memory_get_usage(false)); ?> Memory Usage
 			</p>
+      <p>京ICP备12017915号-1</p>
 		</div>
 		<!-- footer end -->
 	</div>
